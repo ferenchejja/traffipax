@@ -1,2 +1,0 @@
-# traffipax
-Traffipax beadandó feladat

@@ -1,5 +1,5 @@
 # traffipax
+Mikroelektromechanikai rendszerek (GKLB_INTM020)
 Traffipax beadandó feladat
 
-Tesztelem, hogy a RPI-ból hogy updatelhetem más projektjét
 

@@ -29,8 +29,14 @@ def hibaszamitas():
 #-------------------------------------------------------------------------
 def pollmodszer():
     print("Poll módszer")
+    GPIO.setup(27,GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+    
+       
     while True:
-        sleep(1)   
+        if (GPIO.input(27)):
+            print("#",end=" ")
+        
+        #sleep(0.0001)   
         
     return
 #-------------------------------------------------------------------------
@@ -39,7 +45,7 @@ def interruptmodszer():
 #-------------------------------------------------------------------------
 
 
-GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BCM)
 print("Traffipax beadandó feladat v1.0")
 #hibaszamitas()
 print(" Válasszon mérési módszert: 1 - poll 2 - interrupt ")
